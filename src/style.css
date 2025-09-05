@@ -1,3 +1,19 @@
+/* Fixed Footer */
+
+/* Footer is only fixed if content is less than viewport height */
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.fixed-footer {
+  width: 100vw;
+  z-index: 999;
+  background: transparent;
+  margin-top: auto;
+  position: static;
+}
 html {
   --section-background-color: linear-gradient(
     to bottom left,
