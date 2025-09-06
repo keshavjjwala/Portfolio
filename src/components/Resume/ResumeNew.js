@@ -1,66 +1,35 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
-import pdf from "../../Assets/../Assets/Soumyajit_Behera-BIT_MESRA.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
-import { Document, Page, pdfjs } from "react-pdf";
-import "react-pdf/dist/esm/Page/AnnotationLayer.css";
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 
-// function ResumeNew() {
-//   const [width, setWidth] = useState(1200);
-//
-//   useEffect(() => {
-//     setWidth(window.innerWidth);
-//   }, []);
-//
-//   return (
-//     <div>
-//       <Container fluid className="resume-section">
-//         <Particle />
-//         <Row style={{ justifyContent: "center", position: "relative" }}>
-//           <Button
-//             variant="primary"
-//             href={pdf}
-//             target="_blank"
-//             style={{ maxWidth: "250px" }}
-//           >
-//             <AiOutlineDownload />
-//             &nbsp;Download CV
-//           </Button>
-//         </Row>
-//
-//         <Row className="resume">
-//           <Document file={pdf} className="d-flex justify-content-center">
-//             <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
-//           </Document>
-//         </Row>
-//
-//         <Row style={{ justifyContent: "center", position: "relative" }}>
-//           <Button
-//             variant="primary"
-//             href={pdf}
-//             target="_blank"
-//             style={{ maxWidth: "250px" }}
-//           >
-//             <AiOutlineDownload />
-//             &nbsp;Download CV
-//           </Button>
-//         </Row>
-//       </Container>
-//     </div>
-//   );
-// }
+
 
 function ResumeNew() {
+  // Use either a Google Drive preview link or a direct public file link
+  // const pdf = "https://drive.google.com/file/d/1TeIvT3Tescq7OJxdcoBYazH4WW3aMulm/preview";
+  const pdf = process.env.PUBLIC_URL + "/resume.pdf";
   return (
     <div>
       <Container fluid className="resume-section">
         <Particle />
-        <Row style={{ justifyContent: "center", alignItems: "center", minHeight: "40vh" }}>
-          <h1 style={{ color: "var(--imp-text-color)", textAlign: "center", marginTop: "80px" }}>Resume / CV Coming Soon</h1>
+        <Row style={{ justifyContent: "center", position: "relative", minHeight: "60vh", alignItems: "center" }}>
+          <div style={{ textAlign: "center" }}>
+            <Button
+              variant="primary"
+              href={pdf}
+              target="_blank"
+              style={{ maxWidth: "250px", marginBottom: "2rem" }}
+            >
+              <AiOutlineDownload />
+              &nbsp;Download / View CV
+            </Button>
+            <p style={{ color: "#bbb", marginTop: "2rem" }}>
+              If the PDF does not open in your browser, it will be downloaded automatically.
+            </p>
+          </div>
         </Row>
       </Container>
     </div>
