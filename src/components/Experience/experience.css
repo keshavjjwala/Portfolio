@@ -3,13 +3,28 @@
 .experience-section {
   position: relative !important;
   padding-top: 150px !important;
-  padding-bottom: 30px !important;
+  padding-bottom: 50px !important;
   background-image: var(--section-background-color) !important;
   color: white !important;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.experience-section > h1 {
+  margin-bottom: 1px !important;
+  padding-bottom: 30px !important;
+  text-align: center !important;
+}
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .experience-timeline {
@@ -33,9 +48,11 @@
 
 .experience-item {
   display: flex;
-  align-items: flex-start;
-  margin-bottom: 40px;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
   position: relative;
+  margin-bottom: 20px;
 }
 
 .experience-avatar {
@@ -57,7 +74,7 @@
   border-radius: 16px;
   box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
   padding: 2rem 2.5rem !important;
-  margin-left: 40px;
+  margin: 0 auto 50px auto;
   width: 100%;
   max-width: 800px;
   position: relative;
@@ -95,6 +112,7 @@
 }
 .experience-card ul {
   margin: 0.5rem 0 0 1rem;
+  list-style: none;
 }
 
 @media (max-width: 900px) {
