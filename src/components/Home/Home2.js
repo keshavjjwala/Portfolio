@@ -22,7 +22,7 @@ function Home2() {
               <br />
               <br />I am fluent in classics like
               <i>
-                <b className="purple"> C, C++, Java, Python, and JavaScript </b>
+                <b className="purple"> C, C++, Java, Python </b>
               </i>
               <br />
               <br />
@@ -31,23 +31,12 @@ function Home2() {
                 <b className="purple">Full-Stack Web Development, UI/UX Design, and Finance/Investments </b> and
                 also in areas related to{" "}
                 <b className="purple">
-                  AI/ML, DATA SCIENCE, AND CYBER SECURITY.
+                  AI/ML, DATA SCIENCE, AI Engineering.
                 </b>
               </i>
               <br />
               <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
-              <i>
-                <b className="purple">
-                  {" "}
-                  Modern Javascript Library and Frameworks
-                </b>
-              </i>
-              &nbsp; like
-              <i>
-                <b className="purple"> React.js and Next.js</b>
-              </i>
+              I am particularly passionate about creating impactful, real-world products by combining clean design, efficient backend systems, and intelligent features.
             </p>
           </Col>
           <Col md={4} className="myAvtar">

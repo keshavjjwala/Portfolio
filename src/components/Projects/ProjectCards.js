@@ -31,7 +31,7 @@ function ProjectCards(props) {
               style={{ width: "140px" }}
             >
               <CgWebsite /> &nbsp;
-              {props.isOngoing ? "Ongoing" : "Demo"}
+              {props.isOngoing ? "Github" : "Demo"}
             </Button>
           </div>
         )}

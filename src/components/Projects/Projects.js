@@ -6,31 +6,36 @@ import editor from "../../Assets/Projects/codeEditor.png";
 
 const projectData = [
   {
+    imgPath: process.env.PUBLIC_URL + "/hostel.png",
+    title: "VIT Hostel Portal",
+    description: "Developing a system to simplify hostel management and provide essential student tools. Built with Next.js and designed in Figma. (Ongoing)",
+    demoLink: "https://hostels.vitrendz.in/",
+  },
+  {
+  imgPath: process.env.PUBLIC_URL + "/messit.png",
+  title: "Messit",
+  description: "A full-stack mess management system that simplifies hostel dining operations through digital meal tracking, dynamic menu management, and real-time updates. Includes an intuitive dashboard for users and admins, ensuring efficient coordination and improved user experience.",
+  demoLink: "https://your-messit-demo-link.com/",
+},
+  {
     imgPath: process.env.PUBLIC_URL + "/vinhack.png",
     title: "VinHack",
     description: "An innovative hackathon platform built with modern web technologies. Features include event management, team collaboration, real-time updates, and project showcasing capabilities.",
     demoLink: "https://vinhack.vinnovateit.com/",
   },
   {
-    imgPath: "https://media.licdn.com/dms/image/v2/C560BAQHYzd8xATDCrQ/company-logo_200_200/company-logo_200_200/0/1630646009283/v_innovate_it_logo?e=1767225600&v=beta&t=OGBqSpCVRBHYBi2HhXXkjESaT2koQbe0Tmwgcf_j3O4",
-    title: "VinnovateIT ",
-    description: "A modern web development project showcasing cutting-edge technologies and design practices. Features responsive layouts, interactive components, and optimized performance.",
-    ghLink: "https://github.com",
-    demoLink: "https://web25.vinnovateit.com/",
-  },
+  imgPath: process.env.PUBLIC_URL + "/finecho.png",
+  title: "Finecho",
+  description: "A modern AI-powered finance management platform designed to help users track expenses, analyze spending patterns, and gain smart financial insights. Features include intuitive dashboards, real-time data visualization, and intelligent recommendations for better money management.",
+  demoLink: "https://github.com/keshavjjwala/FinEcho",
+},
   {
-    imgPath: editor,
-    title: "VIT Hostel Portal",
-    description: "Developing a system to simplify hostel management and provide essential student tools. Built with Next.js and designed in Figma. (Ongoing)",
-    demoLink: "#",
-    isOngoing: true,
-  },
-  {
-    imgPath: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmDN70AUd2FySlGwwd6bI-tGpzROqNVWOy_g&s",
-    title: "Etech",
-    description: "Project made totally in Next.js focusing on frontend only. Features modern UI, responsive design, and interactive learning components. A comprehensive educational technology platform with smooth user experience.",
-    demoLink: "https://edtech-topaz.vercel.app/",
-  },
+  imgPath: process.env.PUBLIC_URL + "/terravo.jpg",
+  title: "Terravo",
+  description: "A modern platform focused on environmental insights and smart land management solutions. It provides users with intuitive tools to analyze data, monitor resources, and make informed decisions through a clean and interactive interface.",
+  demoLink: "https://github.com/keshavjjwala/Terravo",
+},
+  
 ]
 
 function Projects() {

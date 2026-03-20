@@ -8,7 +8,7 @@ function Experience() {
   const experiences = [
     {
       company: "VITrendz",
-      role: "Frontend Developer",
+      role: "Full Stack Developer",
       duration: "Aug 2025-Present",
       description: [
         "Developed and maintained user interfaces using React.js.",
@@ -18,7 +18,7 @@ function Experience() {
     },
     {
       company: "VinnovateIT",
-      role: "UI/UX DESIGNER",
+      role: "Full Stack Developer & UI/UX Designer",
       duration: "April 2025- Present",
       description: [
         "Conducted user research and created user personas.",
@@ -33,16 +33,6 @@ function Experience() {
         description: [
             "Managing the overall operations and strategic direction of the investment firm."
         ]
-    },
-    {
-      company: "Perplexity AI",
-      role: "Campus Partner",
-      duration: "August 2025 - Present",
-      description: [
-        "Acted as a liaison between Perplexity AI and the campus community.",
-        "Organized events and workshops to promote AI literacy.",
-        "Collaborated with students and faculty to integrate AI tools into the curriculum."
-      ]
     }
   ];
 
